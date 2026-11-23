@@ -78,6 +78,7 @@ public class Main {
 
     private static void listBooks(List<Book> books) {
         if (books.isEmpty()) { System.out.println("No books yet."); return; }
+        System.out.println("Books (" + books.size() + "):");
         books.forEach(System.out::println);
     }
 
