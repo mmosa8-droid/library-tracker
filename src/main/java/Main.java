@@ -98,7 +98,7 @@ public class Main {
         try {
             int id = Integer.parseInt(INPUT.nextLine().trim());
             boolean removed = books.removeIf(b -> b.id == id);
-            if (removed) { saveBooks(books); System.out.println("Book removed."); }
+            if (removed) { saveBooks(books); System.out.println("Book removed successfully."); }
             else System.out.println("No book found with that ID.");
         } catch (NumberFormatException e) {
             System.out.println("Please enter a valid numeric ID.");
