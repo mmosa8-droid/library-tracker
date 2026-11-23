@@ -35,7 +35,7 @@ public class Main {
 
     static void print_banner() {
         System.out.println("======================");
-        System.out.println("    LIBRARY TRACKER");
+        System.out.println("    LIBRARY TRACKER - VERSION A");
         System.out.println("======================");
     }
 
@@ -101,7 +101,7 @@ public class Main {
             if (removed) { saveBooks(books); System.out.println("Book removed successfully."); }
             else System.out.println("No book found with that ID.");
         } catch (NumberFormatException e) {
-            System.out.println("Please enter a valid numeric ID.");
+            System.out.println("Please enter a valid numeric ID.");-
         }
     }
 
