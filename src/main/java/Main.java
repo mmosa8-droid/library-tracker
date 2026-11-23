@@ -89,7 +89,7 @@ public class Main {
         List<Book> matches = books.stream()
                 .filter(b -> b.title.toLowerCase().contains(query) || b.author.toLowerCase().contains(query))
                 .toList();
-        if (matches.isEmpty()) System.out.println("No matching books.");
+        if (matches.isEmpty()) System.out.println("No matching books for \"" + query + "\".");
         else matches.forEach(System.out::println);
     }
 
