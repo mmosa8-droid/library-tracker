@@ -24,3 +24,5 @@ Use `main` as the stable branch. Create short-lived feature branches, commit sma
 - Search title or author (case-insensitive)
 - Remove a book by ID
 - Persist changes to `books.json`
+## Usage
+Run the program and choose 1 to add a book or 2 to list all books.
