@@ -35,7 +35,7 @@ public class Main {
 
     static void print_banner() {
         System.out.println("======================");
-        System.out.println("    LIBRARY TRACKER");
+        System.out.println("    LIBRARY TRACKER - VERSION B");
         System.out.println("======================");
     }
 
