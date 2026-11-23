@@ -89,7 +89,7 @@ public class Main {
         List<Book> matches = books.stream()
                 .filter(b -> b.title.toLowerCase().contains(query) || b.author.toLowerCase().contains(query))
                 .toList();
-        if (matches.isEmpty()) System.out.println("No matching books.");
+        if (matches.isEmpty()) System.out.println("No matching books for \"" + query + "\".");
         else matches.forEach(System.out::println);
     }
 
@@ -98,7 +98,7 @@ public class Main {
         try {
             int id = Integer.parseInt(INPUT.nextLine().trim());
             boolean removed = books.removeIf(b -> b.id == id);
-            if (removed) { saveBooks(books); System.out.println("Book removed."); }
+            if (removed) { saveBooks(books); System.out.println("Book removed successfully."); }
             else System.out.println("No book found with that ID.");
         } catch (NumberFormatException e) {
             System.out.println("Please enter a valid numeric ID.");
